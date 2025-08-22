@@ -1,5 +1,7 @@
 # X4 Sector Creator
 
+> Note: Only a few changes were made in this version. Mainly build/release adjustments and minor fixes (see Changelog).
+
 A tool to help mod new sectors and gate connections in *X4: Foundations*. This tool provides an easy way to create clusters, define sectors within those clusters, and establish gate connections between them. It generates a fully working mod directory with all necessary XML files, making the modding process seamless.
 
 ## Features
@@ -17,6 +19,8 @@ A tool to help mod new sectors and gate connections in *X4: Foundations*. This t
 1. Go to the releases page of this repository and download the latest release. (https://github.com/Ven0maus/X4SectorCreator/releases)
 2. Unpack the compressed zip archive
 3. Run the executable file
+
+Release size note: The current Release build is larger than the original standard build because it is published as a self‑contained single file without additional compression.
 
 ## Tips and tricks
 - You can edit most entries by double clicking on them (clusters, sectors, connections, stations)
@@ -40,6 +44,13 @@ This project is licensed under the GNU V2.0 License.
 ---
 
 Happy modding!
+
+## Changelog
+
+- Icon: Multi‑resolution `.ico` set as application icon; form window icons aligned.
+- Publish: `Data/**` and `icon/**` are included in build/publish so mappings/presets are available at runtime.
+- Fix: Removed preview contextual keyword `field` usage in property accessors (CS9258).
+- Release note: Release EXE is larger than the original standard build because it’s published without extra compression. You can enable compression (e.g., MSBuild property `EnableCompressionInSingleFile=true`) if desired.
 
 ## Screenshots
 
