@@ -1,0 +1,2634 @@
+{
+  "FactionColors": {
+    "None": "#b3b3b3",
+    "Argon": "#001eff",
+    "Antigone": "#0073ff",
+    "Teladi": "#ddff00",
+    "Paranid": "#9500ff",
+    "HolyOrder": "#ff82cf",
+    "Terran": "#bdebff",
+    "Segaris": "#286d7a",
+    "Zyarth": "#b87811",
+    "FreeSplit": "#8c5906",
+    "Hatikvah": "#00f2ff",
+    "Xenon": "#ff0000",
+    "Riptide": "#031f57",
+    "Boron": "#00aeff",
+    "Vigor": "#a19958",
+    "Quettanauts": "#baa079",
+    "Yaki": "#ff00ea",
+    "Scaleplate": "#524e34",
+    "FallenSplit": "#6e300c",
+    "Ministry": "#546339",
+    "Alliance": "#3d1f4d",
+    "Buccaneers": "#361f0d",
+    "Player": "#00ff15",
+    "Khaak": "#d16fba"
+  },
+  "Clusters": [
+    {
+      "Name": "Grand Exchange",
+      "BaseGameMapping": "Cluster_01",
+      "Soundtrack": "music_soundtrack_teladi",
+      "Sectors": [
+        {
+          "Name": "Grand Exchange IV",
+          "Owner": "Teladi",
+          "BaseGameMapping": "Sector003",
+          "Placement": "TopRight",
+          "Sunlight": 1.29,
+          "Economy": 0.5,
+          "Security": 0.25
+        },
+        {
+          "Name": "Grand Exchange I",
+          "Owner": "Teladi",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomRight",
+          "Sunlight": 1.23,
+          "Economy": 0.5,
+          "Security": 0.25
+        },
+        {
+          "Name": "Grand Exchange III",
+          "Owner": "Teladi",
+          "BaseGameMapping": "Sector002",
+          "Placement": "MiddleLeft",
+          "Sunlight": 1.35,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 0,
+        "Y": 0
+      }
+    },
+    {
+      "Name": "Path to Profit",
+      "BaseGameMapping": "Cluster_05",
+      "Soundtrack": "music_soundtrack_teladi",
+      "Sectors": [
+        {
+          "Name": "Path to Profit",
+          "Owner": "Teladi",
+          "Sunlight": 1.43,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 0,
+        "Y": -2
+      }
+    },
+    {
+      "Name": "Void of Opportunity",
+      "BaseGameMapping": "Cluster_725",
+      "Soundtrack": "music_soundtrack_periphery",
+      "Sectors": [
+        {
+          "Name": "Void of Opportunity",
+          "Owner": "None",
+          "Sunlight": 0.83,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -2,
+        "Y": -2
+      }
+    },
+    {
+      "Name": "Black Hole Sun",
+      "BaseGameMapping": "Cluster_06",
+      "Soundtrack": "music_soundtrack_argon",
+      "Sectors": [
+        {
+          "Name": "Black Hole Sun IV",
+          "Owner": "Argon",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopLeft",
+          "Sunlight": 1.16,
+          "Economy": 0.5,
+          "Security": 0.5
+        },
+        {
+          "Name": "Black Hole Sun V",
+          "Owner": "Argon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomRight",
+          "Sunlight": 1.19,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -2,
+        "Y": 0
+      }
+    },
+    {
+      "Name": "Second Contact II Flashpoint",
+      "BaseGameMapping": "Cluster_13",
+      "Sectors": [
+        {
+          "Name": "Second Contact II Flashpoint",
+          "Owner": "Antigone",
+          "Sunlight": 0.59,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -5,
+        "Y": -1
+      }
+    },
+    {
+      "Name": "Second Contact VII",
+      "BaseGameMapping": "Cluster_40",
+      "Sectors": [
+        {
+          "Name": "Second Contact VII",
+          "Owner": "Antigone",
+          "Sunlight": 0.55,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -6,
+        "Y": -2
+      }
+    },
+    {
+      "Name": "Second Contact XI",
+      "BaseGameMapping": "Cluster_41",
+      "Sectors": [
+        {
+          "Name": "Second Contact XI",
+          "Owner": "Antigone",
+          "Sunlight": 0.47,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -6,
+        "Y": 0
+      }
+    },
+    {
+      "Name": "Windfall IV Aurora's Dream",
+      "BaseGameMapping": "Cluster_503",
+      "BackgroundVisualMapping": "Cluster_503t6",
+      "Soundtrack": "music_dlc_pirate_soundtrack_windfall",
+      "Dlc": "ego_dlc_pirate",
+      "Sectors": [
+        {
+          "Name": "Windfall IV Aurora's Dream",
+          "Owner": "Vigor",
+          "Sunlight": 0.11,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -3,
+        "Y": 3
+      }
+    },
+    {
+      "Name": "Windfall III The Hoard",
+      "BaseGameMapping": "Cluster_502",
+      "BackgroundVisualMapping": "Cluster_502t6",
+      "Soundtrack": "music_dlc_pirate_soundtrack_windfall",
+      "Dlc": "ego_dlc_pirate",
+      "Sectors": [
+        {
+          "Name": "Windfall III The Hoard",
+          "Owner": "Vigor",
+          "Sunlight": 0.16,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -3,
+        "Y": 5
+      }
+    },
+    {
+      "Name": "Windfall I Union Summit",
+      "BaseGameMapping": "Cluster_501",
+      "BackgroundVisualMapping": "Cluster_501t6",
+      "Soundtrack": "music_dlc_pirate_soundtrack_windfall",
+      "Dlc": "ego_dlc_pirate",
+      "Sectors": [
+        {
+          "Name": "Windfall I Union Summit",
+          "Owner": "Vigor",
+          "Sunlight": 0.2,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -2,
+        "Y": 6
+      }
+    },
+    {
+      "Name": "Avarice",
+      "BaseGameMapping": "Cluster_500",
+      "BackgroundVisualMapping": "Cluster_500t8",
+      "Soundtrack": "music_dlc_pirate_soundtrack_avarice",
+      "Dlc": "ego_dlc_pirate",
+      "Sectors": [
+        {
+          "Name": "Avarice I",
+          "Owner": "Riptide",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopRight",
+          "Sunlight": 13.9,
+          "Economy": 0.25,
+          "Security": 0.75
+        },
+        {
+          "Name": "Avarice V Dead End",
+          "Owner": "Riptide",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomRight",
+          "Sunlight": 13.9,
+          "Economy": 0.25,
+          "Security": 0.75
+        },
+        {
+          "Name": "Avarice IV",
+          "Owner": "Riptide",
+          "BaseGameMapping": "Sector003",
+          "Placement": "MiddleLeft",
+          "Sunlight": 13.9,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -1,
+        "Y": 3
+      }
+    },
+    {
+      "Name": "Eighteen Billion",
+      "BaseGameMapping": "Cluster_02",
+      "Soundtrack": "music_soundtrack_teladi",
+      "Sectors": [
+        {
+          "Name": "Eighteen Billion",
+          "Owner": "Teladi",
+          "Sunlight": 0.9,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 1,
+        "Y": 3
+      }
+    },
+    {
+      "Name": "Leap of Faith",
+      "BaseGameMapping": "Cluster_504",
+      "BackgroundVisualMapping": "Cluster_504t4",
+      "Soundtrack": "music_dlc_pirate_soundtrack_leap_of_faith",
+      "Dlc": "ego_dlc_pirate",
+      "Sectors": [
+        {
+          "Name": "Leap of Faith",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 0.05,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 12,
+        "Y": 8
+      }
+    },
+    {
+      "Name": "Memory of Profit IX",
+      "BaseGameMapping": "Cluster_03",
+      "Sectors": [
+        {
+          "Name": "Memory of Profit IX",
+          "Owner": "Teladi",
+          "Sunlight": 1.15,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 2,
+        "Y": 2
+      }
+    },
+    {
+      "Name": "Memory of Profit X",
+      "BaseGameMapping": "Cluster_39",
+      "Sectors": [
+        {
+          "Name": "Memory of Profit X",
+          "Owner": "Teladi",
+          "Sunlight": 1.06,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 2,
+        "Y": 0
+      }
+    },
+    {
+      "Name": "Nopileos Fortune",
+      "BaseGameMapping": "Cluster_04",
+      "Sectors": [
+        {
+          "Name": "Nopileos Fortune II",
+          "Owner": "None",
+          "BaseGameMapping": "Sector001",
+          "DisableFactionLogic": true,
+          "Placement": "TopLeft",
+          "Sunlight": 0.82,
+          "Economy": 0.5,
+          "Security": 0.5
+        },
+        {
+          "Name": "Nopileos Fortune VI",
+          "Owner": "None",
+          "BaseGameMapping": "Sector002",
+          "DisableFactionLogic": true,
+          "Placement": "BottomRight",
+          "Sunlight": 0.78,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 3,
+        "Y": -3
+      }
+    },
+    {
+      "Name": "CEO's Doubt",
+      "BaseGameMapping": "cluster_713",
+      "Sectors": [
+        {
+          "Name": "CEO's Doubt",
+          "Owner": "Teladi",
+          "Sunlight": 0.82,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 6,
+        "Y": -4
+      }
+    },
+    {
+      "Name": "Trinity Sanctum VII",
+      "BaseGameMapping": "Cluster_47",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Trinity Sanctum VII",
+          "Owner": "Paranid",
+          "Sunlight": 1.06,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 4,
+        "Y": 4
+      }
+    },
+    {
+      "Name": "Trinity Sanctum III",
+      "BaseGameMapping": "Cluster_18",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Trinity Sanctum III",
+          "Owner": "Paranid",
+          "Sunlight": 1.33,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 5,
+        "Y": 3
+      }
+    },
+    {
+      "Name": "Unholy Retribution",
+      "BaseGameMapping": "Cluster_10",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Unholy Retribution",
+          "Owner": "Paranid",
+          "Sunlight": 1.63,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 5,
+        "Y": -1
+      }
+    },
+    {
+      "Name": "Loomanckstrat's Legacy",
+      "BaseGameMapping": "cluster_712",
+      "Sectors": [
+        {
+          "Name": "Loomanckstrat's Legacy",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 0.02,
+          "Economy": 0.1,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": 7,
+        "Y": -7
+      }
+    },
+    {
+      "Name": "Mi Ton's Refuge",
+      "BaseGameMapping": "cluster_711",
+      "Sectors": [
+        {
+          "Name": "Mi Ton's Refuge",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 0.53,
+          "Economy": 0.1,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": 8,
+        "Y": -8
+      }
+    },
+    {
+      "Name": "Moo-Kye's Revenge",
+      "BaseGameMapping": "cluster_710",
+      "Sectors": [
+        {
+          "Name": "Moo-Kye's Revenge",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 0.93,
+          "Economy": 0.1,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": 7,
+        "Y": -11
+      }
+    },
+    {
+      "Name": "Pious Mists II",
+      "BaseGameMapping": "Cluster_22",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Pious Mists II",
+          "Owner": "Paranid",
+          "Sunlight": 1.36,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 2,
+        "Y": -6
+      }
+    },
+    {
+      "Name": "Pious Mists IV",
+      "BaseGameMapping": "Cluster_37",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Pious Mists IV",
+          "Owner": "Paranid",
+          "Sunlight": 0.89,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 3,
+        "Y": -7
+      }
+    },
+    {
+      "Name": "Pious Mists XI",
+      "BaseGameMapping": "Cluster_38",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Pious Mists XI",
+          "Owner": "Paranid",
+          "Sunlight": 1.18,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 2,
+        "Y": -8
+      }
+    },
+    {
+      "Name": "Sacred Relic",
+      "BaseGameMapping": "Cluster_23",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Sacred Relic",
+          "Owner": "Paranid",
+          "Sunlight": 0.71,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 4,
+        "Y": -10
+      }
+    },
+    {
+      "Name": "Cardinal's Domain",
+      "BaseGameMapping": "cluster_709",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Cardinal's Domain",
+          "Owner": "Paranid",
+          "Sunlight": 1.24,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 4,
+        "Y": -12
+      }
+    },
+    {
+      "Name": "Hewa's Twin C1",
+      "BaseGameMapping": "Cluster_19",
+      "Sectors": [
+        {
+          "Name": "Hewa's Twin II",
+          "Owner": "Teladi",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopRight",
+          "Sunlight": 1.02,
+          "Economy": 0.25,
+          "Security": 0.5
+        },
+        {
+          "Name": "Hewa's Twin I",
+          "Owner": "Teladi",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomLeft",
+          "Sunlight": 1.16,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 7,
+        "Y": -1
+      }
+    },
+    {
+      "Name": "Company Regard",
+      "BaseGameMapping": "Cluster_20",
+      "Sectors": [
+        {
+          "Name": "Company Regard",
+          "Owner": "Teladi",
+          "Sunlight": 0.83,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 9,
+        "Y": -3
+      }
+    },
+    {
+      "Name": "Hewa's Twin C2",
+      "BaseGameMapping": "Cluster_42",
+      "Sectors": [
+        {
+          "Name": "Hewa's Twin III",
+          "Owner": "Teladi",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopLeft",
+          "Sunlight": 0.86,
+          "Economy": 0.25,
+          "Security": 0.5
+        },
+        {
+          "Name": "Hewa's Twin IV The Cove",
+          "Owner": "None",
+          "DisableFactionLogic": true,
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomRight",
+          "Sunlight": 0.91,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 8,
+        "Y": 0
+      }
+    },
+    {
+      "Name": "Scale Plate Green",
+      "BaseGameMapping": "Cluster_21",
+      "Soundtrack": "music_soundtrack_xenon",
+      "Sectors": [
+        {
+          "Name": "Scale Plate Green VII",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopLeft",
+          "Sunlight": 1.15,
+          "Economy": 0.25,
+          "Security": 0.75
+        },
+        {
+          "Name": "Scale Plate Green I",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomRight",
+          "Sunlight": 1.26,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 9,
+        "Y": -5
+      }
+    },
+    {
+      "Name": "Turquoise Sea",
+      "BaseGameMapping": "Cluster_50",
+      "Soundtrack": "music_cluster_turquoise_sea",
+      "Sectors": [
+        {
+          "Name": "Turquoise Sea IX",
+          "Owner": "None",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopLeft",
+          "Sunlight": 1.41,
+          "Economy": 0.25,
+          "Security": 0.5
+        },
+        {
+          "Name": "Turquoise Sea X",
+          "Owner": "None",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomRight",
+          "Sunlight": 1.28,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 10,
+        "Y": -4
+      }
+    },
+    {
+      "Name": "Hewa's Twin V",
+      "BaseGameMapping": "Cluster_43",
+      "Sectors": [
+        {
+          "Name": "Hewa's Twin V",
+          "Owner": "Teladi",
+          "Sunlight": 0.82,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 8,
+        "Y": 2
+      }
+    },
+    {
+      "Name": "Ianamus Zura",
+      "BaseGameMapping": "Cluster_15",
+      "Soundtrack": "music_soundtrack_teladi",
+      "Sectors": [
+        {
+          "Name": "Ianamus Zura VII",
+          "Owner": "Teladi",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopRight",
+          "Sunlight": 1.15,
+          "Economy": 0.25,
+          "Security": 0.75
+        },
+        {
+          "Name": "Ianamus Zura IV",
+          "Owner": "Teladi",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomLeft",
+          "Sunlight": 1.33,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 6,
+        "Y": 8
+      }
+    },
+    {
+      "Name": "Mitsuno's Revelation",
+      "BaseGameMapping": "cluster_701",
+      "BackgroundVisualMapping": "cluster_701_v1",
+      "Soundtrack": "music_dlc_timelines_cluster_mitsuno",
+      "Dlc": "ego_dlc_timelines",
+      "Sectors": [
+        {
+          "Name": "Mitsuno's Revelation",
+          "DisableFactionLogic": true,
+          "Owner": "Quettanauts",
+          "Sunlight": 1.18,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 10,
+        "Y": 2
+      }
+    },
+    {
+      "Name": "Mitsuno's Defiance",
+      "BaseGameMapping": "cluster_702",
+      "BackgroundVisualMapping": "cluster_702_v1",
+      "Soundtrack": "music_dlc_timelines_cluster_mitsuno",
+      "Dlc": "ego_dlc_timelines",
+      "Sectors": [
+        {
+          "Name": "Mitsuno's Defiance",
+          "DisableFactionLogic": true,
+          "Owner": "Quettanauts",
+          "Sunlight": 1.11,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 11,
+        "Y": 1
+      }
+    },
+    {
+      "Name": "Mitsuno's Sacrifice",
+      "BaseGameMapping": "cluster_703",
+      "BackgroundVisualMapping": "cluster_703_v1",
+      "Soundtrack": "music_dlc_timelines_cluster_mitsuno",
+      "Dlc": "ego_dlc_timelines",
+      "Sectors": [
+        {
+          "Name": "Mitsuno's Sacrifice",
+          "DisableFactionLogic": true,
+          "Owner": "Quettanauts",
+          "Sunlight": 1.06,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 11,
+        "Y": -1
+      }
+    },
+    {
+      "Name": "Thuruk's Demise II First Impact",
+      "BaseGameMapping": "Cluster_408",
+      "Soundtrack": "music_dlc_split_soundtrack_periphery",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Thuruk's Demise II First Impact",
+          "Owner": "FreeSplit",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopLeft",
+          "Sunlight": 0.71,
+          "Economy": 0.6,
+          "Security": 0.3
+        },
+        {
+          "Name": "Thuruk's Demise III",
+          "Owner": "FreeSplit",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomRight",
+          "Sunlight": 0.59,
+          "Economy": 0.4,
+          "Security": 0.3
+        }
+      ],
+      "Position": {
+        "X": 8,
+        "Y": 10
+      }
+    },
+    {
+      "Name": "Family Tkr",
+      "BaseGameMapping": "Cluster_407",
+      "Soundtrack": "music_dlc_split_soundtrack_periphery",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Family Tkr",
+          "Owner": "FreeSplit",
+          "Sunlight": 0.89,
+          "Economy": 0.5,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 8,
+        "Y": 12
+      }
+    },
+    {
+      "Name": "Matrix #451",
+      "BaseGameMapping": "Cluster_16",
+      "Soundtrack": "music_soundtrack_xenon",
+      "Sectors": [
+        {
+          "Name": "Matrix #451",
+          "Owner": "Xenon",
+          "Sunlight": 2.01,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 6,
+        "Y": 10
+      }
+    },
+    {
+      "Name": "Matrix #9",
+      "BaseGameMapping": "Cluster_17",
+      "Soundtrack": "music_soundtrack_xenon",
+      "Sectors": [
+        {
+          "Name": "Matrix #9",
+          "Owner": "Xenon",
+          "Sunlight": 1,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 5,
+        "Y": 11
+      }
+    },
+    {
+      "Name": "Fires of Defeat",
+      "BaseGameMapping": "Cluster_421",
+      "Soundtrack": "music_dlc_split_soundtrack_periphery",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Fires of Defeat",
+          "Owner": "FreeSplit",
+          "Sunlight": 0.81,
+          "Economy": 0.5,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 8,
+        "Y": 14
+      }
+    },
+    {
+      "Name": "Tharka's Ravine XXIV",
+      "BaseGameMapping": "Cluster_409",
+      "Soundtrack": "music_dlc_split_soundtrack_ravine",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Tharka's Ravine XXIV",
+          "Owner": "FreeSplit",
+          "Sunlight": 1.09,
+          "Economy": 0.7,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 10,
+        "Y": 12
+      }
+    },
+    {
+      "Name": "Tharka's Ravine XVI",
+      "BaseGameMapping": "Cluster_410",
+      "Soundtrack": "music_dlc_split_soundtrack_ravine",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Tharka's Ravine XVI",
+          "Owner": "FreeSplit",
+          "Sunlight": 1.17,
+          "Economy": 0.25,
+          "Security": 0.3
+        }
+      ],
+      "Position": {
+        "X": 11,
+        "Y": 13
+      }
+    },
+    {
+      "Name": "Tharka's Ravine VIII",
+      "BaseGameMapping": "Cluster_412",
+      "Soundtrack": "music_dlc_split_soundtrack_ravine",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Tharka's Ravine VIII",
+          "Owner": "FreeSplit",
+          "Sunlight": 1.26,
+          "Economy": 0.5,
+          "Security": 0.7
+        }
+      ],
+      "Position": {
+        "X": 12,
+        "Y": 12
+      }
+    },
+    {
+      "Name": "Tharka's Ravine IV Tharka's Fall",
+      "BaseGameMapping": "Cluster_413",
+      "Soundtrack": "music_dlc_split_soundtrack_ravine",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Tharka's Ravine IV Tharka's Fall",
+          "Owner": "Xenon",
+          "Sunlight": 1.31,
+          "Economy": 0.5,
+          "Security": 0.7
+        }
+      ],
+      "Position": {
+        "X": 13,
+        "Y": 13
+      }
+    },
+    {
+      "Name": "Heart of Acrimony II",
+      "BaseGameMapping": "Cluster_411",
+      "Soundtrack": "music_dlc_split_cluster_heart_of_acrimony",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Heart of Acrimony II",
+          "Owner": "FreeSplit",
+          "Sunlight": 2.45,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 12,
+        "Y": 16
+      }
+    },
+    {
+      "Name": "Heart of Acrimony I The Boneyard",
+      "BaseGameMapping": "Cluster_425",
+      "Soundtrack": "music_dlc_split_cluster_heart_of_acrimony",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Heart of Acrimony I The Boneyard",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 0.64,
+          "Economy": 0,
+          "Security": 0
+        }
+      ],
+      "Position": {
+        "X": 11,
+        "Y": 17
+      }
+    },
+    {
+      "Name": "Bright Promise",
+      "BaseGameMapping": "Cluster_09",
+      "Soundtrack": "music_soundtrack_teladi",
+      "Sectors": [
+        {
+          "Name": "Bright Promise",
+          "Owner": "Teladi",
+          "Sunlight": 2.04,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 4,
+        "Y": 8
+      }
+    },
+    {
+      "Name": "Profit Center Alpha",
+      "BaseGameMapping": "Cluster_34",
+      "Soundtrack": "music_soundtrack_teladi",
+      "Sectors": [
+        {
+          "Name": "Profit Center Alpha",
+          "Owner": "Teladi",
+          "Sunlight": 0.79,
+          "Economy": 0.75,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 3,
+        "Y": 9
+      }
+    },
+    {
+      "Name": "Two Grand",
+      "BaseGameMapping": "Cluster_420",
+      "Soundtrack": "music_dlc_split_soundtrack_periphery",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Two Grand",
+          "Owner": "Teladi",
+          "Sunlight": 1.33,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 3,
+        "Y": 13
+      }
+    },
+    {
+      "Name": "Open Market",
+      "BaseGameMapping": "Cluster_419",
+      "Soundtrack": "music_dlc_split_soundtrack_periphery",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Open Market",
+          "Owner": "Teladi",
+          "Sunlight": 0.88,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 2,
+        "Y": 14
+      }
+    },
+    {
+      "Name": "Family Nhuut",
+      "BaseGameMapping": "Cluster_418",
+      "Soundtrack": "music_dlc_split_soundtrack_loyal_families",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Family Nhuut",
+          "Owner": "Zyarth",
+          "Sunlight": 0.85,
+          "Economy": 0.7,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 0,
+        "Y": 16
+      }
+    },
+    {
+      "Name": "Zyarth's Dominion IV",
+      "BaseGameMapping": "Cluster_405",
+      "Soundtrack": "music_dlc_split_soundtrack_patriarchy",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Zyarth's Dominion IV",
+          "Owner": "Zyarth",
+          "Sunlight": 2.1,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": 3,
+        "Y": 17
+      }
+    },
+    {
+      "Name": "Zyarth's Dominion I",
+      "BaseGameMapping": "Cluster_404",
+      "Soundtrack": "music_dlc_split_soundtrack_patriarchy",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Zyarth's Dominion I",
+          "Owner": "Zyarth",
+          "Sunlight": 1.42,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 2,
+        "Y": 18
+      }
+    },
+    {
+      "Name": "Zyarth's Dominion X",
+      "BaseGameMapping": "Cluster_406",
+      "Soundtrack": "music_dlc_split_soundtrack_patriarchy",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Zyarth's Dominion X",
+          "Owner": "Zyarth",
+          "Sunlight": 1.51,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 3,
+        "Y": 19
+      }
+    },
+    {
+      "Name": "Eleventh Hour",
+      "BaseGameMapping": "Cluster_417",
+      "Soundtrack": "music_dlc_split_soundtrack_argon",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Eleventh Hour",
+          "Owner": "Argon",
+          "Sunlight": 1.18,
+          "Economy": 0.25,
+          "Security": 0.7
+        }
+      ],
+      "Position": {
+        "X": 5,
+        "Y": 19
+      }
+    },
+    {
+      "Name": "Guiding Star",
+      "BaseGameMapping": "Cluster_416",
+      "Soundtrack": "music_dlc_split_soundtrack_argon",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Guiding Star VII",
+          "Owner": "Argon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopLeft",
+          "Sunlight": 0.71,
+          "Economy": 0.5,
+          "Security": 0.5
+        },
+        {
+          "Name": "Guiding Star V",
+          "Owner": "Argon",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomRight",
+          "Sunlight": 0.83,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 6,
+        "Y": 16
+      }
+    },
+    {
+      "Name": "President's End",
+      "BaseGameMapping": "cluster_704",
+      "BackgroundVisualMapping": "cluster_704_v1",
+      "Soundtrack": "music_dlc_timelines_cluster_presidents_end",
+      "Dlc": "ego_dlc_timelines",
+      "Sectors": [
+        {
+          "Name": "President's End",
+          "DisableFactionLogic": true,
+          "Owner": "Argon",
+          "Sunlight": 0.71,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": 1,
+        "Y": 7
+      }
+    },
+    {
+      "Name": "Silent Witness I",
+      "BaseGameMapping": "Cluster_08",
+      "Sectors": [
+        {
+          "Name": "Silent Witness I",
+          "Owner": "Argon",
+          "Sunlight": 0.98,
+          "Economy": 0.75,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -1,
+        "Y": 11
+      }
+    },
+    {
+      "Name": "Silent Witness XI",
+      "BaseGameMapping": "Cluster_44",
+      "Sectors": [
+        {
+          "Name": "Silent Witness XI",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 1.18,
+          "Economy": 0.75,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": 0,
+        "Y": 12
+      }
+    },
+    {
+      "Name": "Silent Witness XII",
+      "BaseGameMapping": "Cluster_45",
+      "Sectors": [
+        {
+          "Name": "Silent Witness XII",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 1.47,
+          "Economy": 0.75,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -1,
+        "Y": 13
+      }
+    },
+    {
+      "Name": "Matrix #101",
+      "BaseGameMapping": "cluster_708",
+      "BackgroundVisualMapping": "cluster_708_v1",
+      "Soundtrack": "music_soundtrack_xenon",
+      "Dlc": "ego_dlc_timelines",
+      "Sectors": [
+        {
+          "Name": "Matrix #101",
+          "DisableFactionLogic": true,
+          "Owner": "Xenon",
+          "Sunlight": 4.08,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -3,
+        "Y": 11
+      }
+    },
+    {
+      "Name": "Tharka's Cascade",
+      "BaseGameMapping": "Cluster_32",
+      "Soundtrack": "music_soundtrack_xenon",
+      "Sectors": [
+        {
+          "Name": "Tharka's Cascade XVII",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopLeft",
+          "Sunlight": 1.29,
+          "Economy": 0.25,
+          "Security": 0.5
+        },
+        {
+          "Name": "Tharka's Cascade XV",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomRight",
+          "Sunlight": 1.42,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -4,
+        "Y": 12
+      }
+    },
+    {
+      "Name": "Matrix #79B",
+      "BaseGameMapping": "Cluster_33",
+      "Soundtrack": "music_soundtrack_xenon",
+      "Sectors": [
+        {
+          "Name": "Matrix #79B",
+          "Owner": "Xenon",
+          "Sunlight": 2.39,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -5,
+        "Y": 13
+      }
+    },
+    {
+      "Name": "Family Zhin",
+      "BaseGameMapping": "Cluster_401",
+      "Soundtrack": "music_dlc_split_soundtrack_loyal_families",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Family Zhin",
+          "Owner": "Zyarth",
+          "Sunlight": 0.71,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -3,
+        "Y": 15
+      }
+    },
+    {
+      "Name": "Family Kritt",
+      "BaseGameMapping": "Cluster_402",
+      "Soundtrack": "music_dlc_split_soundtrack_loyal_families",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Family Kritt",
+          "Owner": "Zyarth",
+          "Sunlight": 2.39,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -3,
+        "Y": 17
+      }
+    },
+    {
+      "Name": "Rhy's Defiance",
+      "BaseGameMapping": "Cluster_414",
+      "Soundtrack": "music_dlc_split_soundtrack_xenon",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Rhy's Defiance",
+          "Owner": "Xenon",
+          "Sunlight": 1.63,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -3,
+        "Y": 19
+      }
+    },
+    {
+      "Name": "Matrix #598",
+      "BaseGameMapping": "Cluster_415",
+      "Soundtrack": "music_dlc_split_soundtrack_xenon",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Matrix #598",
+          "Owner": "Xenon",
+          "Sunlight": 0.77,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -2,
+        "Y": 20
+      }
+    },
+    {
+      "Name": "Wretched Skies IV Family Valka",
+      "BaseGameMapping": "Cluster_400",
+      "Soundtrack": "music_dlc_split_soundtrack_periphery",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Wretched Skies IV Family Valka",
+          "Owner": "Zyarth",
+          "Sunlight": 1.3,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -7,
+        "Y": 17
+      }
+    },
+    {
+      "Name": "Wretched Skies V Family Phi",
+      "BaseGameMapping": "Cluster_403",
+      "Soundtrack": "music_dlc_split_soundtrack_periphery",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Wretched Skies V Family Phi",
+          "Owner": "Zyarth",
+          "Sunlight": 1.23,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -8,
+        "Y": 16
+      }
+    },
+    {
+      "Name": "Wretched Skies X",
+      "BaseGameMapping": "Cluster_422",
+      "Soundtrack": "music_dlc_split_soundtrack_periphery",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Wretched Skies X",
+          "Owner": "Paranid",
+          "Sunlight": 1.08,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -9,
+        "Y": 17
+      }
+    },
+    {
+      "Name": "Litany of Fury",
+      "BaseGameMapping": "Cluster_423",
+      "Soundtrack": "music_dlc_split_soundtrack_paranid",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Litany of Fury XII",
+          "Owner": "Paranid",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopRight",
+          "Sunlight": 0.32,
+          "Economy": 0.25,
+          "Security": 0.25
+        },
+        {
+          "Name": "Litany of Fury IX",
+          "Owner": "Paranid",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomLeft",
+          "Sunlight": 0.42,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -11,
+        "Y": 17
+      }
+    },
+    {
+      "Name": "Emperor's Pride",
+      "BaseGameMapping": "Cluster_424",
+      "Soundtrack": "music_dlc_split_soundtrack_paranid",
+      "Dlc": "ego_dlc_split",
+      "Sectors": [
+        {
+          "Name": "Emperor's Pride VI",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopRight",
+          "Sunlight": 0.65,
+          "Economy": 0.75,
+          "Security": 0.75
+        },
+        {
+          "Name": "Emperor's Pride IV",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomLeft",
+          "Sunlight": 0.71,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -12,
+        "Y": 18
+      }
+    },
+    {
+      "Name": "Hatikvah's Choice",
+      "BaseGameMapping": "Cluster_29",
+      "Sectors": [
+        {
+          "Name": "Hatikvah's Choice III",
+          "Owner": "Argon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "TopRight",
+          "Sunlight": 0.91,
+          "Economy": 0.75,
+          "Security": 0.75
+        },
+        {
+          "Name": "Hatikvah's Choice I",
+          "Owner": "Hatikvah",
+          "BaseGameMapping": "Sector001",
+          "Placement": "BottomLeft",
+          "Sunlight": 1.12,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -4,
+        "Y": 8
+      }
+    },
+    {
+      "Name": "Morning Star III",
+      "BaseGameMapping": "Cluster_30",
+      "Soundtrack": "music_soundtrack_argon",
+      "Sectors": [
+        {
+          "Name": "Morning Star III",
+          "Owner": "Argon",
+          "Sunlight": 0.76,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -6,
+        "Y": 8
+      }
+    },
+    {
+      "Name": "Morning Star IV",
+      "BaseGameMapping": "Cluster_46",
+      "Sectors": [
+        {
+          "Name": "Morning Star IV",
+          "Owner": "Argon",
+          "Sunlight": 0.65,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -6,
+        "Y": 10
+      }
+    },
+    {
+      "Name": "Argon Prime",
+      "BaseGameMapping": "Cluster_14",
+      "Soundtrack": "music_soundtrack_argon",
+      "Sectors": [
+        {
+          "Name": "Argon Prime",
+          "Owner": "Argon",
+          "Sunlight": 1,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -6,
+        "Y": 4
+      }
+    },
+    {
+      "Name": "The Reach",
+      "BaseGameMapping": "Cluster_07",
+      "Sectors": [
+        {
+          "Name": "The Reach",
+          "Owner": "Argon",
+          "Sunlight": 3.67,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -7,
+        "Y": 5
+      }
+    },
+    {
+      "Name": "Heretic's End",
+      "BaseGameMapping": "Cluster_31",
+      "Sectors": [
+        {
+          "Name": "Heretic's End",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 1.81,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -8,
+        "Y": 12
+      }
+    },
+    {
+      "Name": "Savage Spur",
+      "BaseGameMapping": "Cluster_112",
+      "Soundtrack": "music_dlc_terran_soundtrack_yaki",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Savage Spur I",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopRight",
+          "Sunlight": 1.17,
+          "Economy": 0.25,
+          "Security": 0.25
+        },
+        {
+          "Name": "Savage Spur II",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomLeft",
+          "Sunlight": 1.25,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -8,
+        "Y": 8
+      }
+    },
+    {
+      "Name": "Getsu Fune",
+      "BaseGameMapping": "Cluster_48",
+      "Soundtrack": "music_cluster_getsu_fune",
+      "Sectors": [
+        {
+          "Name": "Getsu Fune",
+          "Owner": "None",
+          "Sunlight": 0.93,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -10,
+        "Y": 6
+      }
+    },
+    {
+      "Name": "Nopileos' Memorial",
+      "BaseGameMapping": "cluster_705",
+      "BackgroundVisualMapping": "cluster_705_v1",
+      "Soundtrack": "music_dlc_timelines_cluster_nopileos_memorial",
+      "Dlc": "ego_dlc_timelines",
+      "Sectors": [
+        {
+          "Name": "Nopileos' Memorial",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 1.63,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -8,
+        "Y": 4
+      }
+    },
+    {
+      "Name": "Hatikvah's Faith",
+      "BaseGameMapping": "cluster_706",
+      "BackgroundVisualMapping": "cluster_706_v2",
+      "Soundtrack": "music_dlc_timelines_cluster_hatikvahs_faith",
+      "Dlc": "ego_dlc_timelines",
+      "Sectors": [
+        {
+          "Name": "Hatikvah's Faith",
+          "Owner": "None",
+          "DisableFactionLogic": true,
+          "Sunlight": 0.88,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -7,
+        "Y": 3
+      }
+    },
+    {
+      "Name": "The Void",
+      "BaseGameMapping": "Cluster_27",
+      "Sectors": [
+        {
+          "Name": "The Void",
+          "Owner": "Antigone",
+          "Sunlight": 1.64,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -10,
+        "Y": 4
+      }
+    },
+    {
+      "Name": "Antigone Memorial",
+      "BaseGameMapping": "Cluster_28",
+      "Soundtrack": "music_cluster_antigone_memorial",
+      "Sectors": [
+        {
+          "Name": "Antigone Memorial",
+          "Owner": "Antigone",
+          "Sunlight": 1.26,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -11,
+        "Y": 3
+      }
+    },
+    {
+      "Name": "Third Redemption",
+      "BaseGameMapping": "cluster_730",
+      "BackgroundVisualMapping": "cluster_730_v2",
+      "Soundtrack": "music_dlc_mini_01_cluster_third_redemption",
+      "Dlc": "ego_dlc_mini_01",
+      "Sectors": [
+        {
+          "Name": "Third Redemption",
+          "Owner": "None",
+          "DisableFactionLogic": true,
+          "Sunlight": 1,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -10,
+        "Y": 0
+      }
+    },
+    {
+      "Name": "Frontier Edge",
+      "BaseGameMapping": "Cluster_49",
+      "Soundtrack": "music_cluster_frontier_edge",
+      "Sectors": [
+        {
+          "Name": "Frontier Edge",
+          "Owner": "None",
+          "Sunlight": 1.72,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -8,
+        "Y": -2
+      }
+    },
+    {
+      "Name": "Ore Belt",
+      "BaseGameMapping": "cluster_720",
+      "Soundtrack": "music_cluster_ore_belt",
+      "Sectors": [
+        {
+          "Name": "Ore Belt",
+          "Owner": "None",
+          "Sunlight": 1.34,
+          "Economy": 0.25,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": -10,
+        "Y": -2
+      }
+    },
+    {
+      "Name": "Atiya's Misfortune",
+      "BaseGameMapping": "Cluster_26",
+      "Soundtrack": "music_soundtrack_xenon",
+      "Sectors": [
+        {
+          "Name": "Atiya's Misfortune I",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopLeft",
+          "Sunlight": 1.09,
+          "Economy": 0.25,
+          "Security": 0.75
+        },
+        {
+          "Name": "Atiya's Misfortune III",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomRight",
+          "Sunlight": 0.93,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -8,
+        "Y": -6
+      }
+    },
+    {
+      "Name": "Mists of Artemis",
+      "BaseGameMapping": "cluster_715",
+      "Sectors": [
+        {
+          "Name": "Mists of Artemis",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 1.41,
+          "Economy": 0.1,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": -8,
+        "Y": -8
+      }
+    },
+    {
+      "Name": "Sanctum Verge",
+      "BaseGameMapping": "cluster_722",
+      "Soundtrack": "music_cluster_sanctum_verge",
+      "Sectors": [
+        {
+          "Name": "Sanctum Verge",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 0.89,
+          "Economy": 0.25,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": -9,
+        "Y": -11
+      }
+    },
+    {
+      "Name": "Faulty Logic",
+      "BaseGameMapping": "Cluster_25",
+      "Soundtrack": "music_soundtrack_xenon",
+      "Sectors": [
+        {
+          "Name": "Faulty Logic I",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopRight",
+          "Sunlight": 1.77,
+          "Economy": 0.25,
+          "Security": 0.5
+        },
+        {
+          "Name": "Faulty Logic VII",
+          "Owner": "Xenon",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomLeft",
+          "Sunlight": 1.47,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -6,
+        "Y": -8
+      }
+    },
+    {
+      "Name": "True Sight",
+      "BaseGameMapping": "Cluster_12",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "True Sight",
+          "Owner": "HolyOrder",
+          "Sunlight": 0.71,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -4,
+        "Y": -6
+      }
+    },
+    {
+      "Name": "Holy Vision",
+      "BaseGameMapping": "Cluster_24",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Holy Vision",
+          "Owner": "HolyOrder",
+          "Sunlight": 2.08,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -3,
+        "Y": -7
+      }
+    },
+    {
+      "Name": "Cardinal's Redress",
+      "BaseGameMapping": "Cluster_36",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Cardinal's Redress",
+          "Owner": "HolyOrder",
+          "Sunlight": 0.88,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -4,
+        "Y": -10
+      }
+    },
+    {
+      "Name": "Pontifex's Claim",
+      "BaseGameMapping": "Cluster_11",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Pontifex's Claim",
+          "Owner": "HolyOrder",
+          "Sunlight": 1.94,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -2,
+        "Y": -8
+      }
+    },
+    {
+      "Name": "Lasting Vengeance",
+      "BaseGameMapping": "Cluster_35",
+      "Soundtrack": "music_soundtrack_paranid",
+      "Sectors": [
+        {
+          "Name": "Lasting Vengeance",
+          "Owner": "HolyOrder",
+          "Sunlight": 1,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -3,
+        "Y": -11
+      }
+    },
+    {
+      "Name": "Freedom's Reach",
+      "BaseGameMapping": "cluster_714",
+      "Sectors": [
+        {
+          "Name": "Freedom's Reach",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 2.21,
+          "Economy": 0.1,
+          "Security": 0.2
+        }
+      ],
+      "Position": {
+        "X": -4,
+        "Y": -12
+      }
+    },
+    {
+      "Name": "Tempting Fumes",
+      "BaseGameMapping": "cluster_723",
+      "Soundtrack": "music_cluster_tempting_fumes",
+      "Sectors": [
+        {
+          "Name": "Tempting Fumes",
+          "Owner": "None",
+          "Sunlight": 1.66,
+          "Economy": 0.25,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": -2,
+        "Y": -14
+      }
+    },
+    {
+      "Name": "Watchful Gaze",
+      "BaseGameMapping": "Cluster_601",
+      "Soundtrack": "music_dlc_boron_soundtrack_border",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Watchful Gaze",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 0.41,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -10,
+        "Y": 12
+      }
+    },
+    {
+      "Name": "Barren Shores",
+      "BaseGameMapping": "Cluster_602",
+      "BackgroundVisualMapping": "Cluster_602_v1",
+      "Soundtrack": "music_dlc_boron_soundtrack_outer_bubble",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Barren Shores",
+          "Owner": "Boron",
+          "Sunlight": 0.83,
+          "Economy": 0.25,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -11,
+        "Y": 11
+      }
+    },
+    {
+      "Name": "Great Reef",
+      "BaseGameMapping": "Cluster_603",
+      "BackgroundVisualMapping": "Cluster_603_v1",
+      "Soundtrack": "music_dlc_boron_soundtrack_outer_bubble",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Great Reef",
+          "Owner": "Boron",
+          "Sunlight": 1.28,
+          "Economy": 0.5,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -12,
+        "Y": 10
+      }
+    },
+    {
+      "Name": "Ocean of Fantasy",
+      "BaseGameMapping": "Cluster_604",
+      "Soundtrack": "music_dlc_boron_soundtrack_outer_bubble",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Ocean of Fantasy",
+          "Owner": "Boron",
+          "Sunlight": 0.12,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -12,
+        "Y": 8
+      }
+    },
+    {
+      "Name": "Sanctuary of Darkness",
+      "BaseGameMapping": "Cluster_605",
+      "Soundtrack": "music_dlc_boron_soundtrack_border",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Sanctuary of Darkness",
+          "DisableFactionLogic": true,
+          "Owner": "None",
+          "Sunlight": 1.74,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -13,
+        "Y": 13
+      }
+    },
+    {
+      "Name": "Kingdom End",
+      "BaseGameMapping": "Cluster_606",
+      "BackgroundVisualMapping": "Cluster_606_v3",
+      "Soundtrack": "music_dlc_boron_soundtrack_kingdom_end",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Kingdom End I",
+          "Owner": "Boron",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopLeft",
+          "Sunlight": 1.18,
+          "Economy": 0.75,
+          "Security": 0.75
+        },
+        {
+          "Name": "Reflected Stars",
+          "Owner": "Boron",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomLeft",
+          "Sunlight": 1.18,
+          "Economy": 0.75,
+          "Security": 0.75
+        },
+        {
+          "Name": "Towering Wave",
+          "Owner": "Boron",
+          "BaseGameMapping": "Sector003",
+          "Placement": "MiddleRight",
+          "Sunlight": 1.18,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -15,
+        "Y": 15
+      }
+    },
+    {
+      "Name": "Rolk's Demise",
+      "BaseGameMapping": "Cluster_607",
+      "BackgroundVisualMapping": "Cluster_607_v1",
+      "Soundtrack": "music_dlc_boron_soundtrack_inner_bubble",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Rolk's Demise",
+          "Owner": "Boron",
+          "Sunlight": 0.15,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -16,
+        "Y": 14
+      }
+    },
+    {
+      "Name": "Atreus' Clouds",
+      "BaseGameMapping": "Cluster_608",
+      "BackgroundVisualMapping": "Cluster_608_v1",
+      "Soundtrack": "music_dlc_boron_soundtrack_inner_bubble",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Atreus' Clouds",
+          "Owner": "Boron",
+          "Sunlight": 0.41,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -15,
+        "Y": 13
+      }
+    },
+    {
+      "Name": "Menelaus' Oasis",
+      "BaseGameMapping": "Cluster_609",
+      "BackgroundVisualMapping": "Cluster_609_v1",
+      "Soundtrack": "music_dlc_boron_soundtrack_inner_bubble",
+      "Dlc": "ego_dlc_boron",
+      "Sectors": [
+        {
+          "Name": "Menelaus' Oasis",
+          "Owner": "Boron",
+          "Sunlight": 2.71,
+          "Economy": 0.5,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -16,
+        "Y": 12
+      }
+    },
+    {
+      "Name": "Segaris",
+      "BaseGameMapping": "Cluster_113",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Segaris",
+          "Owner": "Segaris",
+          "Sunlight": 1.87,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -11,
+        "Y": -9
+      }
+    },
+    {
+      "Name": "Gaian Prophecy",
+      "BaseGameMapping": "Cluster_114",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Gaian Prophecy",
+          "Owner": "Segaris",
+          "Sunlight": 2.08,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -12,
+        "Y": -10
+      }
+    },
+    {
+      "Name": "Brennan's Triumph",
+      "BaseGameMapping": "Cluster_115",
+      "Soundtrack": "music_cluster_complete",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Brennan's Triumph",
+          "Owner": "Segaris",
+          "Sunlight": 1.22,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -13,
+        "Y": -9
+      }
+    },
+    {
+      "Name": "Circle of Deceit",
+      "BaseGameMapping": "cluster_724",
+      "Soundtrack": "music_cluster_circle_of_deceit",
+      "Sectors": [
+        {
+          "Name": "Circle of Deceit",
+          "Owner": "None",
+          "Sunlight": 1.42,
+          "Economy": 0.25,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": -14,
+        "Y": -12
+      }
+    },
+    {
+      "Name": "Neptune",
+      "BaseGameMapping": "Cluster_110",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Neptune",
+          "Owner": "Terran",
+          "Sunlight": 0.06,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -15,
+        "Y": -5
+      }
+    },
+    {
+      "Name": "Pluto",
+      "BaseGameMapping": "Cluster_111",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Pluto",
+          "Owner": "Terran",
+          "Sunlight": 0.05,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -16,
+        "Y": -6
+      }
+    },
+    {
+      "Name": "Oort Cloud",
+      "BaseGameMapping": "Cluster_116",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Oort Cloud",
+          "Owner": "Terran",
+          "Sunlight": 0.02,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -17,
+        "Y": -7
+      }
+    },
+    {
+      "Name": "Uranus",
+      "BaseGameMapping": "Cluster_109",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Uranus",
+          "Owner": "Terran",
+          "Sunlight": 0.07,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -16,
+        "Y": -4
+      }
+    },
+    {
+      "Name": "Saturn",
+      "BaseGameMapping": "Cluster_108",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Saturn 2",
+          "Owner": "Terran",
+          "BaseGameMapping": "Sector003",
+          "Placement": "TopLeft",
+          "Sunlight": 0.08,
+          "Economy": 0.25,
+          "Security": 0.25
+        },
+        {
+          "Name": "Saturn 1",
+          "Owner": "Terran",
+          "BaseGameMapping": "Sector001",
+          "Placement": "MiddleRight",
+          "Sunlight": 0.08,
+          "Economy": 0.25,
+          "Security": 0.25
+        },
+        {
+          "Name": "Titan",
+          "Owner": "Terran",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomLeft",
+          "Sunlight": 0.08,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -15,
+        "Y": -3
+      }
+    },
+    {
+      "Name": "Jupiter",
+      "BaseGameMapping": "Cluster_107",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Jupiter",
+          "Owner": "Terran",
+          "Sunlight": 0.1,
+          "Economy": 0.25,
+          "Security": 0.25
+        }
+      ],
+      "Position": {
+        "X": -14,
+        "Y": -2
+      }
+    },
+    {
+      "Name": "Asteroid Belt",
+      "BaseGameMapping": "Cluster_100",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Asteroid Belt",
+          "Owner": "Terran",
+          "Sunlight": 0.13,
+          "Economy": 0.25,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -13,
+        "Y": 1
+      }
+    },
+    {
+      "Name": "Mars",
+      "BaseGameMapping": "Cluster_101",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Mars",
+          "Owner": "Terran",
+          "Sunlight": 0.44,
+          "Economy": 0.75,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -14,
+        "Y": 2
+      }
+    },
+    {
+      "Name": "Venus",
+      "BaseGameMapping": "Cluster_102",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Venus",
+          "Owner": "Terran",
+          "Sunlight": 1.89,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -15,
+        "Y": 3
+      }
+    },
+    {
+      "Name": "Mercury",
+      "BaseGameMapping": "Cluster_106",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Mercury",
+          "Owner": "Terran",
+          "Sunlight": 7.14,
+          "Economy": 0.5,
+          "Security": 0.5
+        }
+      ],
+      "Position": {
+        "X": -15,
+        "Y": 5
+      }
+    },
+    {
+      "Name": "Earth",
+      "BaseGameMapping": "Cluster_104",
+      "Dlc": "ego_dlc_terran",
+      "Sectors": [
+        {
+          "Name": "Earth",
+          "Owner": "Terran",
+          "BaseGameMapping": "Sector001",
+          "Placement": "TopLeft",
+          "Sunlight": 1,
+          "Economy": 0.75,
+          "Security": 0.75
+        },
+        {
+          "Name": "The Moon",
+          "Owner": "Terran",
+          "BaseGameMapping": "Sector002",
+          "Placement": "BottomRight",
+          "Sunlight": 1.05,
+          "Economy": 0.75,
+          "Security": 0.75
+        }
+      ],
+      "Position": {
+        "X": -14,
+        "Y": 4
+      }
+    },
+    {
+      "Name": "Adventure's Promise",
+      "BaseGameMapping": "cluster_721",
+      "Soundtrack": "music_cluster_adventures_promise",
+      "Sectors": [
+        {
+          "Name": "Adventure's Promise",
+          "Owner": "None",
+          "Sunlight": 0.71,
+          "Economy": 0.25,
+          "Security": 0.1
+        }
+      ],
+      "Position": {
+        "X": -14,
+        "Y": 8
+      }
+    }
+  ]
+}
