@@ -47,9 +47,12 @@ Happy modding!
 
 ## Changelog
 
-- Icon: Multi‑resolution `.ico` set as application icon; form window icons aligned.
-- Publish: `Data/**` and `icon/**` are included in build/publish so mappings/presets are available at runtime.
-- Fix: Removed preview contextual keyword `field` usage in property accessors (CS9258).
+- App (UI): Multi‑resolution `.ico` set as the main application icon for sharper taskbar/titlebar rendering across DPIs.
+- App (UI): `SectorMapForm` now inherits the main window icon for consistent look.
+- App (Behavior): Sector Map no longer closes unexpectedly; it stays open reliably while working across views.
+- App (Startup): `MainForm` prefers the `.ico`; falls back to PNG (rendered at 256×256) if the ICO is missing.
+- App (Code Fix): Removed usage of contextual keyword `field` in a property accessor in `RegionDefinitionForm` (CS9258) by renaming the loop variable.
+- Build/Publish: `Data/**` and `icon/**` are included in build/publish so mappings/presets are available at runtime.
 - Release note: Release EXE is larger than the original standard build because it’s published without extra compression. You can enable compression (e.g., MSBuild property `EnableCompressionInSingleFile=true`) if desired.
 
 ## Screenshots
