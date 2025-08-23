@@ -22,22 +22,6 @@ namespace X4SectorCreator
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public static MainForm Instance { get; private set; }
 
-        /// <summary>
-        /// Fired when the galaxy data (clusters/sectors/gates/regions/stations) changes.
-        /// Consumers like SectorMapForm can subscribe to auto-refresh.
-        /// </summary>
-        public event EventHandler GalaxyDataChanged;
-
-        private void OnGalaxyDataChanged()
-        {
-            GalaxyDataChanged?.Invoke(this, EventArgs.Empty);
-        }
-
-        public void RaiseGalaxyDataChanged()
-        {
-            OnGalaxyDataChanged();
-        }
-
         /* FORMS */
         public readonly LazyEvaluated<RegionForm> RegionForm = new(() => new RegionForm(), a => !a.IsDisposed);
         public readonly LazyEvaluated<SectorMapForm> SectorMapForm = new(() => new SectorMapForm(), a => !a.IsDisposed);
@@ -78,37 +62,6 @@ namespace X4SectorCreator
 
             Instance = this;
 
-            // Set application/window icon: prefer .ico (multi-res), fallback to PNG
-            try
-            {
-                string icoPath = Path.Combine(Application.StartupPath, "icon", "X4SectorCreator.ico");
-                if (File.Exists(icoPath))
-                {
-                    using var ico = new Icon(icoPath);
-                    Icon = (Icon)ico.Clone();
-                }
-                else
-                {
-                    string pngPath = Path.Combine(Application.StartupPath, "icon", "X4SectorCreator.png");
-                    var appIcon = IconHelper.FromPng(pngPath, 256);
-                    if (appIcon != null)
-                        Icon = appIcon;
-                }
-            }
-            catch { /* best-effort */ }
-
-            // Window constraints without changing UI layout
-            // Ensure the window has a sensible minimum and is clamped to the screen's working area
-            StartPosition = FormStartPosition.CenterScreen;
-            MinimumSize = Size; // keep at least the designed size
-            var wa = Screen.FromControl(this).WorkingArea;
-            MaximumSize = new Size(Math.Max(MinimumSize.Width, wa.Width), Math.Max(MinimumSize.Height, wa.Height));
-
-            // Clamp on key window events
-            Resize += (_, __) => ClampToWorkingArea();
-            ResizeEnd += (_, __) => ClampToWorkingArea();
-            LocationChanged += (_, __) => ClampToWorkingArea();
-
 #if DEBUG
             // Used to move sectors around and save it to the mapping file (only available in debug mode)
             BtnSaveSectorMapping.Visible = true;
@@ -139,44 +92,6 @@ namespace X4SectorCreator
             UpdateClusterOptions();
 
             _currentConfiguration = ExportJsonConfig();
-        }
-
-        /// <summary>
-        /// Ensures the window stays within the current screen working area and not larger than it.
-        /// </summary>
-        private void ClampToWorkingArea()
-        {
-            try
-            {
-                var screen = Screen.FromControl(this);
-                var wa = screen.WorkingArea;
-
-                // Adjust size if larger than working area
-                int newWidth = Math.Min(Width, wa.Width);
-                int newHeight = Math.Min(Height, wa.Height);
-
-                // Adjust location to keep window within working area
-                int newX = Left;
-                int newY = Top;
-
-                // If size exceeds, ensure position starts within
-                if (newWidth == wa.Width) newX = wa.Left;
-                if (newHeight == wa.Height) newY = wa.Top;
-
-                // Clamp position so the window stays fully visible
-                newX = Math.Max(wa.Left, Math.Min(newX, wa.Right - newWidth));
-                newY = Math.Max(wa.Top, Math.Min(newY, wa.Bottom - newHeight));
-
-                // Apply updates atomically to reduce flicker
-                bool sizeChanged = (newWidth != Width) || (newHeight != Height);
-                bool locChanged = (newX != Left) || (newY != Top);
-                if (sizeChanged) Size = new Size(newWidth, newHeight);
-                if (locChanged) Location = new Point(newX, newY);
-            }
-            catch
-            {
-                // best-effort; ignore exceptions from transient states
-            }
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -447,7 +362,6 @@ namespace X4SectorCreator
                     throw new NotImplementedException(selectedValue.ToString());
             }
             ClustersListBox.SelectedIndex = ClustersListBox.Items.Count == 0 ? -1 : 0;
-            RaiseGalaxyDataChanged();
         }
 
         public void UpdateClusterOptions()
@@ -558,7 +472,6 @@ namespace X4SectorCreator
                 : mergedClusters;
 
             UpdateClusterOptions();
-            RaiseGalaxyDataChanged();
         }
 
         private void BtnGalaxySettings_Click(object sender, EventArgs e)
@@ -718,7 +631,7 @@ namespace X4SectorCreator
                 // Clear up corrupted xml
                 Directory.Delete(mainFolder, true);
 #if DEBUG
-                System.Diagnostics.Debug.WriteLine(ex);
+                Debug.WriteLine(ex);
                 throw;
 #else
                 _ = MessageBox.Show("Something went wrong during xml generation: \"" + ex.Message + "\".\nPlease create a bug report. (Be sure to provide the export xml or exact reproduction steps)",
@@ -787,13 +700,11 @@ namespace X4SectorCreator
 
             // Set the default value to be custom
             UpdateClusterOptions();
-            OnGalaxyDataChanged();
         }
         private void BtnReset_Click(object sender, EventArgs e)
         {
             Reset(false);
             _currentConfiguration = ExportJsonConfig();
-            OnGalaxyDataChanged();
         }
 
         private void BtnExportConfig_Click(object sender, EventArgs e)
@@ -964,7 +875,6 @@ namespace X4SectorCreator
 
                     _currentConfiguration = ExportJsonConfig();
                     _ = MessageBox.Show($"Configuration imported succesfully.", "Success");
-                    RaiseGalaxyDataChanged();
                 }
             }
         }
@@ -1027,8 +937,8 @@ namespace X4SectorCreator
             }
 
             // Cluster modification
-            Dictionary<(int, int), Cluster> moveMap = new(); // Stores where each cluster should move
-            HashSet<(int, int)> toRemove = new(); // Stores old positions to remove
+            Dictionary<(int, int), Cluster> moveMap = []; // Stores where each cluster should move
+            HashSet<(int, int)> toRemove = []; // Stores old positions to remove
             foreach (ModifiedCluster modification in configuration.vanillaChanges.ModifiedClusters)
             {
                 Cluster Old = modification.Old;
@@ -1264,7 +1174,7 @@ namespace X4SectorCreator
             // Support for dynamic placement, if all are the same we need to init some changes dynamically
             if (cluster.Sectors.Count > 1 && cluster.Sectors.All(a => a.Placement == default))
             {
-                List<SectorPlacement> placements = Enum.GetValues<SectorPlacement>().OrderBy(a => a).ToList();
+                List<SectorPlacement> placements = [.. Enum.GetValues<SectorPlacement>().OrderBy(a => a)];
                 foreach (Sector sector in cluster.Sectors)
                 {
                     bool placementSet = false;
@@ -1509,7 +1419,6 @@ namespace X4SectorCreator
 
             GatesListBox.Items.Clear();
             RegionsListBox.Items.Clear();
-            RaiseGalaxyDataChanged();
         }
 
         private void ClustersListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -1645,7 +1554,6 @@ namespace X4SectorCreator
 
             // Set details
             SetDetailsText(cluster.Value, sector);
-            RaiseGalaxyDataChanged();
         }
 
         private void SectorsListBox_DoubleClick(object sender, EventArgs e)
@@ -1909,7 +1817,6 @@ namespace X4SectorCreator
             index--;
             index = Math.Max(0, index);
             GatesListBox.SelectedItem = index >= 0 && GatesListBox.Items.Count > 0 ? GatesListBox.Items[index] : null;
-            RaiseGalaxyDataChanged();
         }
 
         private void GatesListBox_DoubleClick(object sender, EventArgs e)

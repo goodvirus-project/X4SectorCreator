@@ -153,10 +153,17 @@ namespace X4SectorCreator.Forms
                     Cluster.AutoPositionSectors();
                 }
 
-                // Refresh map after create/update
-                MainForm.Instance.SectorMapForm.Value.Reset(false);
-                MainForm.Instance.SectorMapForm.Value.Show();
-                
+                // Auto-refresh Sector Map if it's open
+                try
+                {
+                    var map = MainForm.Instance.SectorMapForm.Value;
+                    if (!map.IsDisposed && map.Visible)
+                    {
+                        map.Reset();
+                    }
+                }
+                catch { }
+
                 ResetAndHide();
             }
         }

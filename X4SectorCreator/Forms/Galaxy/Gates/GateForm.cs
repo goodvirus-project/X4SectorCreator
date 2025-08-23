@@ -556,8 +556,18 @@ namespace X4SectorCreator.Forms
             sourceZone.Position = new Point(GatePosX, GatePosY);
 
             UpdateInfoObject = null;
-            // Notify listeners to refresh (SectorMapForm auto-subscribes)
-            MainForm.Instance.RaiseGalaxyDataChanged();
+
+            // Auto-refresh Sector Map if it's open
+            try
+            {
+                var map = MainForm.Instance.SectorMapForm.Value;
+                if (!map.IsDisposed && map.Visible)
+                {
+                    map.Reset();
+                }
+            }
+            catch { }
+
             Close();
         }
 
@@ -704,8 +714,6 @@ namespace X4SectorCreator.Forms
             _ = MainForm.Instance.GatesListBox.Items.Add(targetGate);
             MainForm.Instance.GatesListBox.SelectedItem = targetGate;
 
-            // Notify listeners to refresh (SectorMapForm auto-subscribes)
-            MainForm.Instance.RaiseGalaxyDataChanged();
             Close();
         }
 

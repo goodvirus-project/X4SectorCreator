@@ -1,4 +1,4 @@
-namespace X4SectorCreator.Forms
+﻿namespace X4SectorCreator.Forms
 {
     partial class StationForm
     {
@@ -68,7 +68,7 @@ namespace X4SectorCreator.Forms
             // cmbStationType
             // 
             cmbStationType.FormattingEnabled = true;
-            cmbStationType.Items.AddRange(new object[] { "defence", "equipmentdock", "shipyard", "tradestation", "wharf", "piratebase", "piratedock", "freeport", "factory" });
+            cmbStationType.Items.AddRange(new object[] { "factory", "defence", "equipmentdock", "shipyard", "tradestation", "wharf", "piratebase", "piratedock", "freeport" });
             cmbStationType.Location = new Point(112, 67);
             cmbStationType.Name = "cmbStationType";
             cmbStationType.Size = new Size(158, 23);

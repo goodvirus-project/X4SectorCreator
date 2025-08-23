@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Drawing.Drawing2D;
 using X4SectorCreator.Forms.Stations;
 using X4SectorCreator.Helpers;
@@ -190,7 +190,6 @@ namespace X4SectorCreator.Forms
             }
 
             MainForm.Instance.SetDetailsText(Cluster, Sector);
-            MainForm.Instance.RaiseGalaxyDataChanged();
             Close();
         }
 

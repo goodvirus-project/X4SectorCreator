@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.Drawing.Drawing2D;
+using System.Diagnostics;
 using X4SectorCreator.Forms;
 using X4SectorCreator.Helpers;
 using X4SectorCreator.Objects;
@@ -82,6 +83,20 @@ namespace X4SectorCreator
                 }
             },
             {
+                "Stations", new List<object>
+                {
+                    "Factory",
+                    "Defence",
+                    "Wharf",
+                    "Shipyard",
+                    "Equipmentdock",
+                    "Tradestation",
+                    "Piratebase",
+                    "Piratedock",
+                    "Freeport"
+                }
+            },
+            {
                 "Others", new List<object>
                 {
                     "Faction Logic Disabled"
@@ -156,23 +171,9 @@ namespace X4SectorCreator
             Show_Custom_Stations
         }
 
-        private readonly EventHandler _galaxyChangedHandler;
-
         public SectorMapForm()
         {
             InitializeComponent();
-
-            // Match app window icon
-            if (MainForm.Instance != null && MainForm.Instance.Icon != null)
-                Icon = MainForm.Instance.Icon;
-
-            _galaxyChangedHandler = (_, __) => Reset(false);
-            MainForm.Instance.GalaxyDataChanged += _galaxyChangedHandler;
-            this.Disposed += (_, __) =>
-            {
-                if (MainForm.Instance != null)
-                    MainForm.Instance.GalaxyDataChanged -= _galaxyChangedHandler;
-            };
 
             TxtSearch.EnableTextSearch(_availableSearchSectors, a => a.Name, SearchRender);
             Disposed += SectorMapForm_Disposed;
@@ -280,6 +281,11 @@ namespace X4SectorCreator
                 _legend.Remove("Custom Factions");
             }
 
+            foreach (var station in _legend["stations"])
+            {
+                LegendTree.ImageList.Images.Add(station.ToString(), GetIconFromStore(station.ToString().ToLower()));
+            }
+
             // Don't show vanilla, if no sector contains vanilla factions
             if (MainForm.Instance.AllClusters.Values.SelectMany(a => a.Sectors).All(a => string.IsNullOrWhiteSpace(a.Owner)))
                 _legend.Remove("factions");
@@ -334,6 +340,14 @@ namespace X4SectorCreator
                             ImageKey = faction.Id
                         };
                     }
+                    else if (legendEntry.Key == "Stations")
+                    {
+                        var entryStr = entry as string;
+                        childNode = new TreeNode(entryStr)
+                        {
+                            ImageKey = entryStr
+                        };
+                    }
                     else
                     {
                         var (name, _) = ((string name, Color color))entry;
@@ -373,10 +387,6 @@ namespace X4SectorCreator
             if (iconName.Equals("piratedock") || iconName.Equals("freeport"))
                 iconName = "piratebase";
 
-            // Fallback mapping: display tradestation icon for factory type until a dedicated asset exists
-            if (iconName.Equals("factory"))
-                iconName = "tradestation";
-
             if (!_imageMap.TryGetValue(iconName, out var image))
             {
                 var path = Path.Combine(Application.StartupPath, $"Data/Icons/{iconName}.png");
@@ -386,7 +396,7 @@ namespace X4SectorCreator
                 }
                 else
                 {
-                    _imageMap[iconName] = image = null;
+                    throw new Exception($"Cannot find icon \"{iconName}.png\".");
                 }
             }
             return image;
@@ -841,11 +851,11 @@ namespace X4SectorCreator
             catch (Exception ex)
             {
 #if DEBUG
-                System.Diagnostics.Debug.WriteLine(ex);
+                Debug.WriteLine(ex);
                 throw;
 #else
                 _ = MessageBox.Show("An error occured when trying to render the map view: \"" + ex.Message + "\".\nPlease create a bug report. (Be sure to provide the export xml or exact reproduction steps).");
-                Close();
+                //Close();
 #endif
             }
         }
@@ -1586,9 +1596,6 @@ namespace X4SectorCreator
             // We still have an issue with highway type gates showing as a double because they have different paths
             HashSet<Gate> processedTargets = [];
 
-            // Any invalid connections will be recorded
-            List<GateData> invalidConnections = [];
-
             // Set to keep track of processed connections
             foreach (GateData sourceGateData in gatesData)
             {
@@ -1605,7 +1612,6 @@ namespace X4SectorCreator
                     .FirstOrDefault(a => a.Zone.Gates.Any(b => b.SourcePath == sourceGateData.Gate.DestinationPath));
                 if (targetGateData.Cluster == null) //Default
                 {
-                    invalidConnections.Add(sourceGateData);
                     continue;
                 }
 
@@ -1631,12 +1637,6 @@ namespace X4SectorCreator
                     Source = sourceGateData,
                     Target = targetGateData
                 };
-            }
-
-            if (invalidConnections.Count > 0)
-            {
-                _ = MessageBox.Show("Some of your gate connections are invalid, please double check them:\n- " +
-                    string.Join("\n- ", invalidConnections.Select(a => a.Gate.ParentSectorName + " -> " + a.Gate.DestinationSectorName)));
             }
         }
 
@@ -2050,12 +2050,7 @@ namespace X4SectorCreator
             }
 
             DeselectHex();
-            // Keep map open: exit selection mode and update UI
-            GateSectorSelection = false;
-            ClusterSectorSelection = false;
-            BtnSelectLocation.Enabled = false;
-            BtnSelectLocation.Hide();
-            Invalidate();
+            //Close();
         }
 
         private static string GetClusterMacro(Cluster cluster)
@@ -2168,15 +2163,25 @@ namespace X4SectorCreator
 
         private void SectorMapForm_Load(object sender, EventArgs e)
         {
-            // Ensure not maximized and match MainForm size on open
-            WindowState = FormWindowState.Normal;
-            Size = MainForm.Instance.Size;
-
             // Pre-hide boxes if stored in mem
             if (_optionWasMinimzed)
                 BtnHideOptions.PerformClick();
             if (_legendWasMinimized)
                 BtnHideLegend.PerformClick();
+
+            // Start with same size/location as MainForm instead of fullscreen
+            try
+            {
+                var main = MainForm.Instance;
+                WindowState = FormWindowState.Normal;
+                StartPosition = FormStartPosition.Manual;
+                Size = main.ClientSize;
+                Location = new Point(main.Location.X, main.Location.Y);
+            }
+            catch
+            {
+                // Fallback silently if MainForm is not yet available
+            }
         }
 
         internal struct GateConnection

@@ -229,7 +229,7 @@ namespace X4SectorCreator
             Controls.Add(ControlPanel);
             MinimizeBox = false;
             Name = "SectorMapForm";
-            StartPosition = FormStartPosition.CenterScreen;
+            StartPosition = FormStartPosition.Manual;
             Text = "X4 Sector Map";
             WindowState = FormWindowState.Normal;
             Load += SectorMapForm_Load;

@@ -53,14 +53,14 @@ namespace X4SectorCreator.Forms.Galaxy.ProceduralGeneration.Algorithms.FactionAl
             g.Clear(bgColor);
 
             var symbolColor = Color.FromArgb(255, 255 - bgColor.R, 255 - bgColor.G, 255 - bgColor.B);
-            g.FillPolygon(new SolidBrush(symbolColor),
-                new Point[]
-                {
-                    new(128, 60),
-                    new(170, 128),
-                    new(128, 196),
-                    new(86, 128)
-                });
+            Point[] diamond =
+            [
+                new(128, 60),
+                new(170, 128),
+                new(128, 196),
+                new(86, 128)
+            ];
+            g.FillPolygon(new SolidBrush(symbolColor), diamond);
         }
 
         static void DrawDiagonalDivision(Graphics g, Random rand)
@@ -68,8 +68,10 @@ namespace X4SectorCreator.Forms.Galaxy.ProceduralGeneration.Algorithms.FactionAl
             var color1 = Color.FromArgb(255, rand.Next(256), rand.Next(256), rand.Next(256));
             var color2 = Color.FromArgb(255, rand.Next(256), rand.Next(256), rand.Next(256));
 
-            g.FillPolygon(new SolidBrush(color1), new Point[] { new(0, 0), new(256, 0), new(0, 256) });
-            g.FillPolygon(new SolidBrush(color2), new Point[] { new(256, 256), new(256, 0), new(0, 256) });
+            Point[] tri1 = [ new(0, 0), new(256, 0), new(0, 256) ];
+            Point[] tri2 = [ new(256, 256), new(256, 0), new(0, 256) ];
+            g.FillPolygon(new SolidBrush(color1), tri1);
+            g.FillPolygon(new SolidBrush(color2), tri2);
 
             g.FillEllipse(new SolidBrush(Color.White), 108, 108, 40, 40);
         }
@@ -261,7 +263,8 @@ namespace X4SectorCreator.Forms.Galaxy.ProceduralGeneration.Algorithms.FactionAl
                 Point p2 = new(p1.X + rand.Next(-40, 40), p1.Y + rand.Next(-40, 40));
                 Point p3 = new(p1.X + rand.Next(-40, 40), p1.Y + rand.Next(-40, 40));
                 var brush = new SolidBrush(Color.FromArgb(80 + rand.Next(150), rand.Next(150, 255), rand.Next(150, 255), rand.Next(150, 255)));
-                g.FillPolygon(brush, new Point[] { p1, p2, p3 });
+                Point[] tri = [ p1, p2, p3 ];
+                g.FillPolygon(brush, tri);
             }
         }
 
@@ -447,8 +450,8 @@ namespace X4SectorCreator.Forms.Galaxy.ProceduralGeneration.Algorithms.FactionAl
             }
 
             // Central overlay shape
-            g.FillPolygon(new SolidBrush(Color.FromArgb(120, 255, 255, 255)),
-                new Point[] { new(128, 90), new(170, 130), new(128, 170), new(86, 130) });
+            Point[] overlay = [ new(128, 90), new(170, 130), new(128, 170), new(86, 130) ];
+            g.FillPolygon(new SolidBrush(Color.FromArgb(120, 255, 255, 255)), overlay);
         }
 
         static void DrawGlitchFrame(Graphics g, Random rand)

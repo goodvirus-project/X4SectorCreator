@@ -1,4 +1,4 @@
-namespace X4SectorCreator
+﻿namespace X4SectorCreator
 {
     partial class MainForm
     {
@@ -71,7 +71,6 @@ namespace X4SectorCreator
             // BtnRemoveCluster
             // 
             BtnRemoveCluster.Location = new Point(94, 279);
-            BtnRemoveCluster.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnRemoveCluster.Name = "BtnRemoveCluster";
             BtnRemoveCluster.Size = new Size(75, 23);
             BtnRemoveCluster.TabIndex = 0;
@@ -82,7 +81,6 @@ namespace X4SectorCreator
             // ClustersListBox
             // 
             ClustersListBox.FormattingEnabled = true;
-            ClustersListBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             ClustersListBox.HorizontalScrollbar = true;
             ClustersListBox.Location = new Point(13, 104);
             ClustersListBox.Name = "ClustersListBox";
@@ -104,7 +102,6 @@ namespace X4SectorCreator
             // BtnNewCluster
             // 
             BtnNewCluster.Location = new Point(13, 279);
-            BtnNewCluster.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnNewCluster.Name = "BtnNewCluster";
             BtnNewCluster.Size = new Size(75, 23);
             BtnNewCluster.TabIndex = 9;
@@ -115,7 +112,6 @@ namespace X4SectorCreator
             // BtnNewSector
             // 
             BtnNewSector.Location = new Point(174, 279);
-            BtnNewSector.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnNewSector.Name = "BtnNewSector";
             BtnNewSector.Size = new Size(75, 23);
             BtnNewSector.TabIndex = 13;
@@ -126,7 +122,6 @@ namespace X4SectorCreator
             // SectorsListBox
             // 
             SectorsListBox.FormattingEnabled = true;
-            SectorsListBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             SectorsListBox.HorizontalScrollbar = true;
             SectorsListBox.Location = new Point(174, 75);
             SectorsListBox.Name = "SectorsListBox";
@@ -148,7 +143,6 @@ namespace X4SectorCreator
             // BtnRemoveSector
             // 
             BtnRemoveSector.Location = new Point(255, 279);
-            BtnRemoveSector.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnRemoveSector.Name = "BtnRemoveSector";
             BtnRemoveSector.Size = new Size(75, 23);
             BtnRemoveSector.TabIndex = 10;
@@ -159,7 +153,6 @@ namespace X4SectorCreator
             // BtnGenerateDiffs
             // 
             BtnGenerateDiffs.Location = new Point(336, 540);
-            BtnGenerateDiffs.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             BtnGenerateDiffs.Name = "BtnGenerateDiffs";
             BtnGenerateDiffs.Size = new Size(318, 23);
             BtnGenerateDiffs.TabIndex = 18;
@@ -170,7 +163,6 @@ namespace X4SectorCreator
             // BtnNewGate
             // 
             BtnNewGate.Location = new Point(336, 279);
-            BtnNewGate.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnNewGate.Name = "BtnNewGate";
             BtnNewGate.Size = new Size(75, 23);
             BtnNewGate.TabIndex = 22;
@@ -181,7 +173,6 @@ namespace X4SectorCreator
             // GatesListBox
             // 
             GatesListBox.FormattingEnabled = true;
-            GatesListBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             GatesListBox.HorizontalScrollbar = true;
             GatesListBox.Location = new Point(336, 75);
             GatesListBox.Name = "GatesListBox";
@@ -202,7 +193,6 @@ namespace X4SectorCreator
             // BtnRemoveGate
             // 
             BtnRemoveGate.Location = new Point(417, 279);
-            BtnRemoveGate.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnRemoveGate.Name = "BtnRemoveGate";
             BtnRemoveGate.Size = new Size(75, 23);
             BtnRemoveGate.TabIndex = 19;
@@ -223,7 +213,6 @@ namespace X4SectorCreator
             // LblDetails
             // 
             LblDetails.BackColor = SystemColors.ButtonHighlight;
-            LblDetails.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             LblDetails.BorderStyle = BorderStyle.FixedSingle;
             LblDetails.Font = new Font("Segoe UI", 12F);
             LblDetails.Location = new Point(12, 336);
@@ -284,7 +273,6 @@ namespace X4SectorCreator
             // BtnOpenFolder
             // 
             BtnOpenFolder.Location = new Point(336, 569);
-            BtnOpenFolder.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             BtnOpenFolder.Name = "BtnOpenFolder";
             BtnOpenFolder.Size = new Size(318, 23);
             BtnOpenFolder.TabIndex = 34;
@@ -295,7 +283,6 @@ namespace X4SectorCreator
             // BtnNewRegion
             // 
             BtnNewRegion.Location = new Point(335, 511);
-            BtnNewRegion.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnNewRegion.Name = "BtnNewRegion";
             BtnNewRegion.Size = new Size(75, 23);
             BtnNewRegion.TabIndex = 38;
@@ -306,7 +293,6 @@ namespace X4SectorCreator
             // RegionsListBox
             // 
             RegionsListBox.FormattingEnabled = true;
-            RegionsListBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             RegionsListBox.HorizontalScrollbar = true;
             RegionsListBox.Location = new Point(335, 336);
             RegionsListBox.Name = "RegionsListBox";
@@ -327,7 +313,6 @@ namespace X4SectorCreator
             // BtnRemoveRegion
             // 
             BtnRemoveRegion.Location = new Point(416, 511);
-            BtnRemoveRegion.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnRemoveRegion.Name = "BtnRemoveRegion";
             BtnRemoveRegion.Size = new Size(75, 23);
             BtnRemoveRegion.TabIndex = 35;
@@ -350,7 +335,6 @@ namespace X4SectorCreator
             // BtnNewStation
             // 
             BtnNewStation.Location = new Point(498, 279);
-            BtnNewStation.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnNewStation.Name = "BtnNewStation";
             BtnNewStation.Size = new Size(75, 23);
             BtnNewStation.TabIndex = 43;
@@ -361,7 +345,6 @@ namespace X4SectorCreator
             // ListStations
             // 
             ListStations.FormattingEnabled = true;
-            ListStations.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             ListStations.HorizontalScrollbar = true;
             ListStations.Location = new Point(498, 75);
             ListStations.Name = "ListStations";
@@ -382,7 +365,6 @@ namespace X4SectorCreator
             // BtnRemoveStation
             // 
             BtnRemoveStation.Location = new Point(579, 279);
-            BtnRemoveStation.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             BtnRemoveStation.Name = "BtnRemoveStation";
             BtnRemoveStation.Size = new Size(75, 23);
             BtnRemoveStation.TabIndex = 40;
@@ -393,7 +375,6 @@ namespace X4SectorCreator
             // BtnJobs
             // 
             BtnJobs.Location = new Point(498, 336);
-            BtnJobs.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnJobs.Name = "BtnJobs";
             BtnJobs.Size = new Size(156, 31);
             BtnJobs.TabIndex = 48;
@@ -404,7 +385,6 @@ namespace X4SectorCreator
             // BtnFactories
             // 
             BtnFactories.Location = new Point(498, 373);
-            BtnFactories.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnFactories.Name = "BtnFactories";
             BtnFactories.Size = new Size(156, 31);
             BtnFactories.TabIndex = 49;
@@ -415,7 +395,6 @@ namespace X4SectorCreator
             // BtnObjectsOverview
             // 
             BtnObjectsOverview.Location = new Point(498, 447);
-            BtnObjectsOverview.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnObjectsOverview.Name = "BtnObjectsOverview";
             BtnObjectsOverview.Size = new Size(156, 31);
             BtnObjectsOverview.TabIndex = 50;
@@ -434,7 +413,6 @@ namespace X4SectorCreator
             // BtnCustomFactions
             // 
             BtnCustomFactions.Location = new Point(498, 410);
-            BtnCustomFactions.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnCustomFactions.Name = "BtnCustomFactions";
             BtnCustomFactions.Size = new Size(156, 31);
             BtnCustomFactions.TabIndex = 52;
@@ -445,7 +423,6 @@ namespace X4SectorCreator
             // GenerateModProgressBar
             // 
             GenerateModProgressBar.Location = new Point(498, 522);
-            GenerateModProgressBar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             GenerateModProgressBar.Name = "GenerateModProgressBar";
             GenerateModProgressBar.Size = new Size(151, 12);
             GenerateModProgressBar.TabIndex = 53;
@@ -454,7 +431,6 @@ namespace X4SectorCreator
             // 
             BtnSaveSectorMapping.Enabled = false;
             BtnSaveSectorMapping.Location = new Point(416, 305);
-            BtnSaveSectorMapping.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnSaveSectorMapping.Name = "BtnSaveSectorMapping";
             BtnSaveSectorMapping.Size = new Size(238, 28);
             BtnSaveSectorMapping.TabIndex = 54;

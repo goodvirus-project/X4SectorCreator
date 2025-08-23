@@ -1,7 +1,5 @@
 # X4 Sector Creator
 
-> Note: Only a few changes were made in this version. Mainly build/release adjustments and minor fixes (see Changelog).
-
 A tool to help mod new sectors and gate connections in *X4: Foundations*. This tool provides an easy way to create clusters, define sectors within those clusters, and establish gate connections between them. It generates a fully working mod directory with all necessary XML files, making the modding process seamless.
 
 ## Features
@@ -20,8 +18,6 @@ A tool to help mod new sectors and gate connections in *X4: Foundations*. This t
 2. Unpack the compressed zip archive
 3. Run the executable file
 
-Release size note: The current Release build is larger than the original standard build because it is published as a self‑contained single file without additional compression.
-
 ## Tips and tricks
 - You can edit most entries by double clicking on them (clusters, sectors, connections, stations)
 - You can right click a gate to rotate it
@@ -38,22 +34,20 @@ Release size note: The current Release build is larger than the original standar
 
 Add the resulting folder of your chosen name in your **gamedirectory/extensions folder** and enable it in-game to see the results.
 
+## Changelog
+See detailed changes in `CHANGELOG.md`.
+
+## Credits / Disclaimer
+I am not the original creator of this tool; I only provide updates and maintenance for this repository.
+
+Original project by __Ven0maus__: https://github.com/Ven0maus/X4SectorCreator
+
 ## License
 This project is licensed under the GNU V2.0 License.
 
 ---
 
 Happy modding!
-
-## Changelog
-
-- App (UI): Multi‑resolution `.ico` set as the main application icon for sharper taskbar/titlebar rendering across DPIs.
-- App (UI): `SectorMapForm` now inherits the main window icon for consistent look.
-- App (Behavior): Sector Map no longer closes unexpectedly; it stays open reliably while working across views.
-- App (Startup): `MainForm` prefers the `.ico`; falls back to PNG (rendered at 256×256) if the ICO is missing.
-- App (Code Fix): Removed usage of contextual keyword `field` in a property accessor in `RegionDefinitionForm` (CS9258) by renaming the loop variable.
-- Build/Publish: `Data/**` and `icon/**` are included in build/publish so mappings/presets are available at runtime.
-- Release note: Release EXE is larger than the original standard build because it’s published without extra compression. You can enable compression (e.g., MSBuild property `EnableCompressionInSingleFile=true`) if desired.
 
 ## Screenshots
 

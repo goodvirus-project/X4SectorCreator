@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+using System.ComponentModel;
 using X4SectorCreator.Objects;
 
 namespace X4SectorCreator.Forms
@@ -292,6 +292,17 @@ namespace X4SectorCreator.Forms
 
             // Determines the position inside the cluster based on the selected placement
             DetermineSectorOffset(_selectedCluster, sectorValue);
+            // Auto-refresh Sector Map if it's open
+            try
+            {
+                var map = MainForm.Instance.SectorMapForm.Value;
+                if (!map.IsDisposed && map.Visible)
+                {
+                    map.Reset();
+                }
+            }
+            catch { }
+
             ResetAndHide();
         }
 
